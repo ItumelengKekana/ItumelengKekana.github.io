@@ -1,0 +1,30 @@
+.navbar-fixed .nav-wrapper{
+    color: blue;
+}
+
+.container .header-content{
+    text-align: center;
+    font-size: 50px;
+}
+
+img{
+    width: 50px;
+    background-color: transparent;
+}
+
+.contact-content ul{
+    font-size: 30px;
+}
+
+.skills-content ul{
+    font-size: 25px;
+}
+
+body{
+    background-color: rgb(240, 223, 223);
+}
+
+header p{
+    font-weight: bold;
+}
+
