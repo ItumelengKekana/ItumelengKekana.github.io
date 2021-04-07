@@ -1,32 +1,23 @@
-.navbar-fixed .nav-wrapper{
-    color: blue;
+body{
+    background-color: #bbe6e7;
+    font-family: 'Titillium', sans-serif;
 }
 
-.container .header-content{
-    text-align: center;
-    font-size: 50px;
-}
-
-img{
-    width: 50px;
+.card{
     background-color: transparent;
 }
 
-.contact-content ul{
-    font-size: 30px;
+
+.navbar.scrolled{
+    background-color: rgb(57, 125, 228);
+    transition: background 0.2s;
 }
 
-.skills-content ul{
-    font-size: 25px;
+#mainNavbar .nav-link{
+    font-weight: 100;
 }
 
-body{
-    background-color: rgb(240, 223, 223);
+#mainNavbar .nav-link:hover{
+    color: #372bdf;
 }
-
-header p{
-    font-weight: bold;
-}
-
-
 
