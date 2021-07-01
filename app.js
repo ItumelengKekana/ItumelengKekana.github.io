@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const ejsMate = require('ejs-mate');
+const port = process.env.PORT || 5000;
 
 const portfolioRoutes = require('./routes/portfolio')
 
@@ -14,6 +15,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/portfolio', portfolioRoutes);
 
-app.listen(4000, () =>{
-    console.log('On port 4000')
+app.listen(port, () =>{
+    console.log('Server up!')
 })
