@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItumelengKekana/ItumelengKekana.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ItumelengKekana/ItumelengKekana.github.io/issues"
+  },
+  "homepage": "https://github.com/ItumelengKekana/ItumelengKekana.github.io#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.1"
+  },
+  "engines": {
+      "node": "^14.x"
+  }
+  
+}
