@@ -4,7 +4,7 @@ const path = require('path');
 const ejsMate = require('ejs-mate');
 const port = process.env.PORT || 5000;
 
-const portfolioRoutes = require('./routes/portfolio')
+const portfolioRoutes = require('./routes/portfolio');
 
 app.engine('ejs', ejsMate);
 app.set('view engine', 'ejs');
@@ -14,7 +14,8 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/portfolio', portfolioRoutes);
+app.use('*', (req, res) => {res.render('main/404')});
 
 app.listen(port, () =>{
     console.log('Server up!')
-})
+});
