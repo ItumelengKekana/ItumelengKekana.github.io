@@ -4,6 +4,8 @@ body{
     background-size: cover;
     background-position: center;
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+    --nav-load-time: 0.3s;
+    --head-load-time: calc(var(--nav-load-time) + 0.2s);
 }
 
 .cover-container{
@@ -18,12 +20,7 @@ body{
     border-bottom: 0.25rem solid transparent;
 }
 
-.nav-link:hover{
-    color: rgba(255, 255, 255, 0.5);
-    border-bottom-color: rgba(255, 255, 255, 0.5);
-}
-
-.nav-link.active{
+.active{
     color: white;
     border-bottom-color:white;
 }
@@ -31,3 +28,56 @@ body{
 .skill-list{
     font-size: 1.2rem;
 }
+
+nav{
+    animation: nav-load var(--nav-load-time) ease-in ;
+}
+
+.h-container h1{
+    animation: head-load 0.3s ease-in var(--head-load-time);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.h-container p{
+    animation: head-load 0.3s ease-in calc(var(--head-load-time) + 0.2s);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.h-container .btns{
+    animation: head-load 0.3s ease-in calc(var(--head-load-time) + 0.4s);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.nav-link:hover{
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+@keyframes nav-load {
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes head-load {
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
