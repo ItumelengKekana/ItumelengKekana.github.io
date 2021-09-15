@@ -6,6 +6,9 @@ body{
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
     --nav-load-time: 0.3s;
     --head-load-time: calc(var(--nav-load-time) + 0.2s);
+    --proj-load-time: calc(var(--nav-load-time) + 0.2s);
+    --cv-load-time: calc(var(--nav-load-time) + 0.2s);
+    --highlight: rgba(131, 24, 173, 0.623);
 }
 
 .cover-container{
@@ -20,6 +23,10 @@ body{
     border-bottom: 0.25rem solid transparent;
 }
 
+.nav-link{
+    color: var(--highlight);
+}
+
 .active{
     color: white;
     border-bottom-color:white;
@@ -31,6 +38,10 @@ body{
 
 nav{
     animation: nav-load var(--nav-load-time) ease-in ;
+}
+
+.h-container h1{
+    color: var(--highlight);
 }
 
 .h-container h1{
@@ -49,6 +60,31 @@ nav{
 
 .h-container .btns{
     animation: head-load 0.3s ease-in calc(var(--head-load-time) + 0.4s);
+    animation-fill-mode: forwards;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.proj h2{
+    color: var(--highlight);
+}
+
+.proj {
+    animation-name: proj-load;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-delay: var(--proj-load-time);
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.cv h3{
+    color: var(--highlight);
+}
+
+.cv{
+    animation: cv-load 0.3s ease-in var(--cv-load-time);
     animation-fill-mode: forwards;
     transform: translateY(-20px);
     opacity: 0;
@@ -70,6 +106,30 @@ nav{
 }
 
 @keyframes head-load {
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes proj-load {
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes cv-load {
     0%{
         transform: translateY(-20px);
         opacity: 0;
