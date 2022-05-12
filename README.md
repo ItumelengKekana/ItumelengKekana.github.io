@@ -2,7 +2,7 @@
 
 ### Screenshot
 
-![Text](public\assets\previewGif.gif)
+![Text](https://github.com/ItumelengKekana/ItumelengKekana.github.io/blob/path-change/public/assets/previewGif.gif)
 
 ### Tech stack
 
