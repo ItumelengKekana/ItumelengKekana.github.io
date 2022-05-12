@@ -2,7 +2,7 @@
 
 ### Screenshot
 
-![Text](https://drive.google.com/file/d/14ejylBeFuFU8RrQ8d-hmCWL3D2E6uddD/view?usp=sharing)
+![Text](public\assets\previewGif.gif)
 
 ### Tech stack
 
