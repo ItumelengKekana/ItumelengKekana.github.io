@@ -1,4 +1,4 @@
-### [Itumeleng Kekana Portfolio Page](https://itumeleng-kekana-portfolio.herokuapp.com/)
+### [Itumeleng Kekana Portfolio Page](https://itumelengportfolio.vercel.app/)
 
 ### Screenshot
 
